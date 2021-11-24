@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>HUFFMAN ENCODING</title>
+        <link rel="stylesheet" href="design.css">
+        <script src="heap.js"></script>
+        <script src="huffman.js" type="module"></script>
+        <script src="script.js" type="module"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="p">
+                <div id="c" class="toolbar">
+                    <ul>
+                        <li><a href="#c" style="color: darkblue; text-decoration: none;">HOME</a></li>
+                        <li><a href="#n" style="color: darkblue; text-decoration: none;">ABOUT PROJECT</a></li>
+                        <li><a href="#m" style="color: darkblue; text-decoration: none;">PROJECT</a></li>
+                        <li><a href="#s" style="color: darkblue; text-decoration: none;">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <div class="topic">
+                    TEXT<br><nav id="co">WRAPPER</nav>
+                </div>
+                <a href="#n" class="btn">
+                💫Let's go💫
+                </a>
+            </div> 
+            <div class="about">
+                <div id="n" class="title">
+                      ABOUT OUR PROJECT
+                </div>
+                <div style="border: black double;height: 0px;"></div>
+                <div class="about_c">
+                    Hey Guys, in this project we are implementing what we know as zipper. So basically we are compressing our files, that is LOSS LESS compression. And Finally we will get a compressed or encoded file for our original text.<br> 
+                    NOTE - Since our project is at a basic stage only, so it works well for only .txt file. For PDF and DOCX file it may not work properly.<br> 
+                    FOR ENCODING :<br>  
+                    Step 1 - Click on "CHOOSE FILE" button :- To choose the original text file which has to be compressed.<br>
+                    <br><img style="height: 20px;" src="choose.png"><br><br>
+                    Step 2 - CLick on "Encode" button :- After choosing the file a huffman binary tree can be seen on the left pane of the window. This button COMPRESSES the original file and downloads it simultaneously.<br>
+                    Your file is Successfully compressed now.<br><br>
+                    FOR DECODING :<br>
+                    Step 1 - Click on "CHOOSE FILE" button :- To choose the original text file which has to be compressed.<br>
+                    <br><img style="height: 20px;" src="choose.png"><br><br>
+                    Step 2 - CLick on "Decode" button :- After choosing the file a huffman binary tree can be seen on the left pane of the window. This button DECOMPRESSES the original file and downloads it simultaneously.<br>
+                    Your file is Successfully decompressed now.<br><br><br>
+                    The Compression Algorithm used in our project is HUFFMAN ENCODING.<br> We have used this algorithm to implement our Encoding and Decoding of the file.
+                </div>
+                <div style="border: black double;height: 0px;"></div>
+                <br>
+                <a href="#m" class="btn2" style="font-family: Georgia, 'Times New Roman', Times, serif; color:lightcyan;">
+                    NEXT
+                    </a>
+            </div>
+            <header>
+                <div id="m" class="title">
+                    TEXT WRAPPER
+                </div>
+                <div id="container">
+                    <div class="text_box" style="overflow-y: scroll">
+                        <span id="treearea" style="width: 100%; color: black; text-align: center; font-weight: bold; font-size: 23px;">
+                            Tree Structure Will Be Displayed Here !!
+                        </span>
+                    </div>
+                    <div class="text_box" style="overflow-y: scroll">
+                        <span id="temptext" style="width: 100%; color: black; text-align: center; font-weight: bold; font-size: 23px;">
+                            Operation info will be shown here !!
+                        </span>
+                    </div>
+                </div>
+        
+                <div>
+                    <form method="post" enctype="multipart/form-data" style="font-family: Georgia, 'Times New Roman', Times, serif; color: lightcyan; display: inline-block;">
+                        <input class="input" type="file" id="uploadedFile"/>
+                    </form>
+                    <div style="text-align: center;"><button type="button" class="button1" id="encode">&nbsp;&nbsp;Encode&nbsp;&nbsp;</button></div>
+                    <br>
+                    <div style="text-align: center;"><button type="button" class="button2" id="decode">&nbsp;&nbsp;Decode&nbsp;&nbsp;</button></div>
+                </div>
+                <br>
+                <a href="#s" class="btn2" style="font-family: Georgia, 'Times New Roman', Times, serif; color:lightcyan;">
+                    NEXT
+                    </a>
+            </header>
+            <div class="nitin">
+                <div id="s" class="second">
+                    CONTACT US
+                </div>
+                <br>
+                <div style="border: black double;height: 0px;"></div>
+                <div class="name">
+                    <div class="image">
+                        <img class="image2" src="contact.jpeg">
+                    </div>
+                    <div class="k" style="color: lightcyan;">
+                        <nav style="color: lightcyan;">CREATED BY</nav> <br>NILESH SETH<br><nav style="color: turquoise;">(2K20/CO/303)</nav><br>NITIN PATEL<br><nav style="color: turquoise;">(2K20/CO/308)</nav>
+                    </div>
+                </div>
+                <div style="border: black double;height: 0px;"></div>
+                <div class="social">
+                    <br> 
+                    <div style="color: turquoise; font-size: 30px; font-family: Georgia, 'Times New Roman', Times, serif;">NILESH SETH</div> 
+                            <a href="https://www.instagram.com/nileshseth_007/"><img style="width: 40px; margin-right: 20px; height: 40px;" src="instagram_icon.png"></a>
+                            <a href="https://www.linkedin.com/in/nilesh-seth-674004205"><img style="width: 40px; height: 40px;" src="linkedin.png"></a>
+                            <br><br> 
+                    <div style="color: turquoise; font-size: 30px; font-family: Georgia, 'Times New Roman', Times, serif;">NITIN PATEL</div>
+                            <a href="https://www.instagram.com/its_nitin_2k01/"><img style="width: 40px; margin-right: 20px; height: 40px;" src="instagram_icon.png"></a>
+                            <a href="https://www.linkedin.com/in/nitin-patel-76282218a/"><img style="width: 40px; height: 40px;" src="linkedin.png"></i></a>			
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
